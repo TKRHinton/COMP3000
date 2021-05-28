@@ -126,6 +126,12 @@ namespace Robocrab
             }
         }
 
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            help p = new help();
+            p.ShowDialog();
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -140,5 +146,17 @@ namespace Robocrab
         {
 
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

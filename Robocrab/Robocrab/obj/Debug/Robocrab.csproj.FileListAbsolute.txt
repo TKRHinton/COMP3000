@@ -8,3 +8,14 @@ C:\Users\Theon\Documents\GitHub\Robocrab\Robocrab\obj\Debug\Robocrab.csproj.Gene
 C:\Users\Theon\Documents\GitHub\Robocrab\Robocrab\obj\Debug\Robocrab.csproj.CoreCompileInputs.cache
 C:\Users\Theon\Documents\GitHub\Robocrab\Robocrab\obj\Debug\Robocrab.exe
 C:\Users\Theon\Documents\GitHub\Robocrab\Robocrab\obj\Debug\Robocrab.pdb
+C:\Users\Theon\Documents\GitHub\COMP3000\Robocrab\Robocrab\bin\Debug\Robocrab.exe.config
+C:\Users\Theon\Documents\GitHub\COMP3000\Robocrab\Robocrab\bin\Debug\Robocrab.exe
+C:\Users\Theon\Documents\GitHub\COMP3000\Robocrab\Robocrab\bin\Debug\Robocrab.pdb
+C:\Users\Theon\Documents\GitHub\COMP3000\Robocrab\Robocrab\obj\Debug\Robocrab.csprojAssemblyReference.cache
+C:\Users\Theon\Documents\GitHub\COMP3000\Robocrab\Robocrab\obj\Debug\Robocrab.Form1.resources
+C:\Users\Theon\Documents\GitHub\COMP3000\Robocrab\Robocrab\obj\Debug\Robocrab.Properties.Resources.resources
+C:\Users\Theon\Documents\GitHub\COMP3000\Robocrab\Robocrab\obj\Debug\Robocrab.csproj.GenerateResource.cache
+C:\Users\Theon\Documents\GitHub\COMP3000\Robocrab\Robocrab\obj\Debug\Robocrab.csproj.CoreCompileInputs.cache
+C:\Users\Theon\Documents\GitHub\COMP3000\Robocrab\Robocrab\obj\Debug\Robocrab.exe
+C:\Users\Theon\Documents\GitHub\COMP3000\Robocrab\Robocrab\obj\Debug\Robocrab.pdb
+C:\Users\Theon\Documents\GitHub\COMP3000\Robocrab\Robocrab\obj\Debug\Robocrab.help.resources

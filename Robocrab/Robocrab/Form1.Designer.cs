@@ -37,12 +37,12 @@ namespace Robocrab
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.btnReset = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnTest = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnRap = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -56,6 +56,8 @@ namespace Robocrab
             this.rotationText = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -110,6 +112,28 @@ namespace Robocrab
             this.panel1.Size = new System.Drawing.Size(342, 450);
             this.panel1.TabIndex = 5;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(31, 211);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(269, 37);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "RoboCrab App V1.0";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(71, 41);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(189, 167);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -149,28 +173,6 @@ namespace Robocrab
             this.btnTest.Text = "Test";
             this.btnTest.UseVisualStyleBackColor = true;
             this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(71, 41);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(189, 167);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(31, 211);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(269, 37);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "RoboCrab App V1.0";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // btnRap
             // 
@@ -220,11 +222,12 @@ namespace Robocrab
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(455, 315);
+            this.label7.Location = new System.Drawing.Point(461, 315);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 17);
+            this.label7.Size = new System.Drawing.Size(50, 17);
             this.label7.TabIndex = 17;
-            this.label7.Text = "e.g. 20s";
+            this.label7.Text = "e.g 20s";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -276,9 +279,9 @@ namespace Robocrab
             this.label11.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(369, 398);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(47, 17);
+            this.label11.Size = new System.Drawing.Size(52, 17);
             this.label11.TabIndex = 23;
-            this.label11.Text = "e.g. 90";
+            this.label11.Text = "e.g. 90°";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label12
@@ -287,9 +290,30 @@ namespace Robocrab
             this.label12.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(461, 398);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 17);
+            this.label12.Size = new System.Drawing.Size(52, 17);
             this.label12.TabIndex = 24;
-            this.label12.Text = "e.g. 20";
+            this.label12.Text = "e.g. 20°";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(360, 433);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(302, 17);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "Please Make sure all user inputs are intergers only";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Location = new System.Drawing.Point(571, 12);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(91, 23);
+            this.btnHelp.TabIndex = 26;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // Form1
             // 
@@ -297,6 +321,8 @@ namespace Robocrab
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(674, 450);
+            this.Controls.Add(this.btnHelp);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.rotationText);
@@ -357,6 +383,8 @@ namespace Robocrab
         private System.Windows.Forms.TextBox rotationText;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button btnHelp;
     }
 }
 

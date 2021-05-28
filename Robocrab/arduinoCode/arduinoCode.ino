@@ -8,10 +8,9 @@ void setup() {
 
   Serial.begin(9600);
   motor.attach(3);
-  motor2.attach(5);
+  motor2.attach(4);
 
   delay(2000);
-
   Serial.println("Type Somthing");
 }
 
@@ -24,21 +23,14 @@ void loop() {
   String rapDuration;
   String rapAngle;
   String rapRotation;
-
-//  while (Serial.available()){
-//    delay(5)
-//    if(Serial)
-//  }
+  int sum = 0;
+  int duration = 0;
 
   if(Serial.available()) {
 
     outputString = Serial.readStringUntil('\n');
     Serial.print("You typed ");
     Serial.print(outputString);
-
-   // motor.write(0);
-   // delay(1000);
-   // motor.write(180);
    
   }
 
@@ -86,12 +78,17 @@ void loop() {
     motor2.write(rapAngle.toInt());
     delay(500);
     
-    for (int i = 0; i <= rapDuration.toInt(); i++) {
+    duration = (rapDuration.toInt()* 1000);
+
+    while (duration > sum) 
+    {
        motor2.write(rapAngle.toInt());
        delay(rapSpeed.toInt());
+       sum += rapSpeed.toInt();
        motor2.write((rapAngle.toInt() + rapRotation.toInt()));
        delay(rapSpeed.toInt());
-     }
+       sum += rapSpeed.toInt();
+    }
   }
 
 

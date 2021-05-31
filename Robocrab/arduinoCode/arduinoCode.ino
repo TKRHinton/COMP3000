@@ -36,13 +36,13 @@ void loop() {
 
   if (outputString == "open")
   {
-    motor.write(0);
+    motor.write(100);
     delay(1000);
   }
 
    if (outputString == "close")
   {
-    motor.write(180);
+    motor.write(50);
     delay(1000);
   }
 
@@ -90,7 +90,4 @@ void loop() {
        sum += rapSpeed.toInt();
     }
   }
-
-
-
 }
